@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/components/index.tsx");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.tsx");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -202,19 +202,19 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar React = __webpack_require__(/*! react */ \"react\");\r\nexports.Hello = function (props) { return (React.createElement(\"h1\", null,\r\n    \"Hello from \",\r\n    props.compiler,\r\n    \" and \",\r\n    props.framework,\r\n    \"!\")); };\r\n\n\n//# sourceURL=webpack:///./src/components/Hello.tsx?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar React = __webpack_require__(/*! react */ \"react\");\r\nexports.Hello = function (props) { return (React.createElement(\"h1\", null,\r\n    \"Hello from \",\r\n    props.compiler,\r\n    \" and \",\r\n    props.framework,\r\n    \" :)\")); };\r\n\n\n//# sourceURL=webpack:///./src/components/Hello.tsx?");
 
 /***/ }),
 
-/***/ "./src/components/index.tsx":
-/*!**********************************!*\
-  !*** ./src/components/index.tsx ***!
-  \**********************************/
+/***/ "./src/index.tsx":
+/*!***********************!*\
+  !*** ./src/index.tsx ***!
+  \***********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar React = __webpack_require__(/*! react */ \"react\");\r\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\nvar Hello_1 = __webpack_require__(/*! ./Hello */ \"./src/components/Hello.tsx\");\r\nReactDOM.render(React.createElement(Hello_1.Hello, { compiler: \"TypeScript\", framework: \"React!!\" }), document.getElementById(\"example\"));\r\n\n\n//# sourceURL=webpack:///./src/components/index.tsx?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar React = __webpack_require__(/*! react */ \"react\");\r\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\nvar Hello_1 = __webpack_require__(/*! ./components/Hello */ \"./src/components/Hello.tsx\");\r\nReactDOM.render(React.createElement(Hello_1.Hello, { compiler: \"TypeScript\", framework: \"React\" }), document.getElementById(\"example\"));\r\n\n\n//# sourceURL=webpack:///./src/index.tsx?");
 
 /***/ }),
 
