@@ -194,18 +194,6 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 /***/ }),
 
-/***/ "./src/components/Hello.tsx":
-/*!**********************************!*\
-  !*** ./src/components/Hello.tsx ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar React = __webpack_require__(/*! react */ \"react\");\r\nexports.Hello = function (props) { return (React.createElement(\"h1\", null,\r\n    \"Hello from \",\r\n    props.compiler,\r\n    \" and \",\r\n    props.framework,\r\n    \" :)\")); };\r\n\n\n//# sourceURL=webpack:///./src/components/Hello.tsx?");
-
-/***/ }),
-
 /***/ "./src/index.tsx":
 /*!***********************!*\
   !*** ./src/index.tsx ***!
@@ -214,7 +202,19 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nva
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar React = __webpack_require__(/*! react */ \"react\");\r\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\nvar Hello_1 = __webpack_require__(/*! ./components/Hello */ \"./src/components/Hello.tsx\");\r\nReactDOM.render(React.createElement(Hello_1.Hello, { compiler: \"TypeScript\", framework: \"React\" }), document.getElementById(\"example\"));\r\n\n\n//# sourceURL=webpack:///./src/index.tsx?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar React = __webpack_require__(/*! react */ \"react\");\r\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\nvar Hello_1 = __webpack_require__(/*! ./js/components/Hello */ \"./src/js/components/Hello.tsx\");\r\nReactDOM.render(React.createElement(Hello_1.Hello, { compiler: \"TypeScript\", framework: \"React\" }), document.getElementById(\"title\"));\r\n//宣告一個匿名function\r\nvar displayTime = function () {\r\n    //建立一個顯示目前時間的組件\r\n    var nowTime = (React.createElement(\"div\", null,\r\n        React.createElement(\"span\", null,\r\n            \"\\u73FE\\u5728\\u6642\\u9593\\uFF1A\",\r\n            new Date().toLocaleTimeString())));\r\n    //將上方的組件放進id為root的element中\r\n    ReactDOM.render(nowTime, document.getElementById('example'));\r\n};\r\n//每隔一秒重新取得時間放到畫面上\r\nsetInterval(displayTime, 1000);\r\n\n\n//# sourceURL=webpack:///./src/index.tsx?");
+
+/***/ }),
+
+/***/ "./src/js/components/Hello.tsx":
+/*!*************************************!*\
+  !*** ./src/js/components/Hello.tsx ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar React = __webpack_require__(/*! react */ \"react\");\r\nexports.Hello = function (props) { return (React.createElement(\"h1\", null,\r\n    \"Hello from \",\r\n    props.compiler,\r\n    \" and \",\r\n    props.framework,\r\n    \" !!\")); };\r\n\n\n//# sourceURL=webpack:///./src/js/components/Hello.tsx?");
 
 /***/ }),
 

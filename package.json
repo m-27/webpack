@@ -6,7 +6,8 @@
   "scripts": {
     "watch": "webpack --watch --mode development",
     "start": "webpack --mode development",
-    "deploy": "webpack --mode production"
+    "deploy": "webpack --mode production",
+    "open": "webpack-dev-server --mode development --hot --inline"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +17,8 @@
     "@babel/preset-env": "^7.0.0",
     "babel-loader": "^8.0.2",
     "webpack": "^4.16.5",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
     "@types/react": "^16.0.31",
