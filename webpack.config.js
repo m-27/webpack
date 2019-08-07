@@ -1,26 +1,20 @@
 const path = require('path');
 
 module.exports = {
-    context: path.resolve(__dirname, 'js'),
-    entry: {
-        index: './index.js'
-    },
+    entry: "./src/components/index.tsx",
     output:{
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index.bundle.js',
+        filename: 'bundle.js',
+    },
+    resolve:{
+        extensions:[".ts", ".tsx", ".js", ".json"]
     },
     module:{
         rules:[
-            {
-                test:/\.(js)$/,
-                exclude:/(node_modules)/,
-                use:{
-                    loader: 'babel-loader',
-                    options:{
-                        presets:['@babel/preset-env']
-                    }
-                }
-            }
+            {test: /\.tsx?$/, loader: "awesome-typescript-loader"},
         ]
+    },
+    externals:{
+        react: "React","react-dome":"ReactDOM"
     }
 };
